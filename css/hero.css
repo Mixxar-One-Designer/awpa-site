@@ -1,0 +1,175 @@
+.hero{
+  padding: 76px 0 40px;
+  overflow: hidden;
+  position: relative;
+}
+.hero::before{
+  content:"";
+  position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(560px 420px at 8% 0%, rgba(22,163,74,.09), transparent 60%),
+    radial-gradient(480px 480px at 100% 20%, rgba(232,169,75,.10), transparent 65%);
+}
+.hero .container{ position:relative; z-index:1; }
+.hero-copy .eyebrow{ animation: fadeUp .7s var(--ease) both; }
+.hero-copy h1{ animation: fadeUp .7s var(--ease) .08s both; }
+.hero-copy p{ animation: fadeUp .7s var(--ease) .16s both; }
+.hero-actions{ animation: fadeUp .7s var(--ease) .24s both; }
+.hero-note{ animation: fadeUp .7s var(--ease) .3s both; }
+.phone-stage{ animation: fadeUp .8s var(--ease) .2s both; }
+
+@keyframes fadeUp{
+  from{ opacity:0; transform: translateY(14px); }
+  to{ opacity:1; transform: translateY(0); }
+}
+.hero .container{
+  display:grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items:center;
+}
+.hero-copy h1{
+  font-size: clamp(40px, 5.6vw, 68px);
+  line-height: 1.02;
+  color: var(--green-dark);
+  text-transform: lowercase;
+  margin-top: 18px;
+}
+.hero-copy h1 .accent{ color: var(--green); }
+.hero-copy p{
+  font-size: 18px;
+  color: var(--ink-soft);
+  max-width: 460px;
+  margin-top: 20px;
+}
+.hero-actions{ display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top: 32px; }
+.store-btn{
+  display:flex; align-items:center; gap:10px;
+  background: var(--green-dark); color:#fff;
+  padding: 11px 20px; border-radius: 14px;
+  position: relative;
+}
+.store-btn small{ display:block; font-size:10.5px; color: rgba(255,255,255,.65); }
+.store-btn strong{ display:block; font-size:15px; font-weight:600; }
+.store-btn .tag-soon{
+  position:absolute; top:-10px; right:-8px;
+  background: var(--gold); color: var(--green-dark);
+}
+.hero-note{
+  margin-top: 18px; font-size: 12.5px; color: var(--ink-faint);
+  font-family: var(--font-mono);
+}
+
+/* ---------- signature element: phone with live chat->checkout thread ---------- */
+.phone-stage{
+  display:flex; justify-content:center; position:relative;
+}
+.phone-stage::before{
+  content:"";
+  position:absolute; width: 420px; height:420px;
+  background: radial-gradient(circle, rgba(22,163,74,.16), transparent 70%);
+  border-radius: 50%;
+  z-index:0;
+}
+.phone{
+  position:relative; z-index:1;
+  width: 290px; height: 588px;
+  background: var(--green-dark);
+  border-radius: 42px;
+  padding: 14px;
+  box-shadow: 0 40px 80px -30px rgba(15,46,26,.55);
+  animation: floatPhone 6s ease-in-out infinite;
+}
+@keyframes floatPhone{
+  0%, 100%{ transform: translateY(0); }
+  50%{ transform: translateY(-12px); }
+}
+.phone-screen{
+  width:100%; height:100%;
+  background: var(--mist);
+  border-radius: 30px;
+  overflow:hidden;
+  position:relative;
+  display:flex; flex-direction:column;
+}
+.phone-bar{
+  background: var(--white);
+  padding: 14px 16px 12px;
+  display:flex; align-items:center; gap:10px;
+  border-bottom: 1px solid var(--mist-line);
+  flex-shrink:0;
+}
+.phone-bar .avatar{
+  width:32px; height:32px; border-radius:50%;
+  background: var(--green); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-size:13px; font-weight:700; font-family: var(--font-display);
+}
+.phone-bar .who strong{ display:block; font-size:13.5px; color: var(--ink); }
+.phone-bar .who span{ display:block; font-size:11px; color: var(--green); }
+
+.thread{
+  flex:1; padding: 14px 12px; display:flex; flex-direction:column; gap:8px;
+  font-size: 12.5px;
+}
+.bubble{
+  max-width: 78%;
+  padding: 9px 12px;
+  border-radius: 14px;
+  opacity:0;
+  transform: translateY(8px);
+  animation: bubbleIn 9s var(--ease) infinite;
+  line-height:1.35;
+}
+.bubble.in{ background: var(--white); align-self:flex-start; border-bottom-left-radius:4px; color: var(--ink); }
+.bubble.out{ background: var(--green); align-self:flex-end; border-bottom-right-radius:4px; color:#fff; }
+.bubble .t{ display:block; font-family: var(--font-mono); font-size:9.5px; opacity:.6; margin-top:3px; }
+
+.bubble.card{
+  background:#fff; align-self:flex-end; border-bottom-right-radius:4px;
+  width: 78%; padding:0; overflow:hidden; border:1px solid var(--mist-line);
+}
+.bubble.card .card-top{
+  height:56px;
+  background: linear-gradient(135deg, #CFE9D8, #9FD4B2);
+  display:flex; align-items:center; justify-content:center;
+}
+.bubble.card .card-body{ padding:8px 10px; }
+.bubble.card .card-body strong{ display:block; font-size:12px; }
+.bubble.card .card-body span{ font-family: var(--font-mono); font-size:11px; color: var(--green); }
+
+.bubble.sys{
+  align-self:center; background: rgba(15,46,26,.08); color: var(--green-dark);
+  font-family: var(--font-mono); font-size:10.5px; padding:6px 12px; border-radius:20px;
+  display:flex; align-items:center; gap:6px;
+}
+
+.bubble:nth-child(1){ animation-delay: 0s; }
+.bubble:nth-child(2){ animation-delay: .9s; }
+.bubble:nth-child(3){ animation-delay: 1.9s; }
+.bubble:nth-child(4){ animation-delay: 2.9s; }
+.bubble:nth-child(5){ animation-delay: 3.9s; }
+
+@keyframes bubbleIn{
+  0%{ opacity:0; transform: translateY(8px); }
+  6%{ opacity:1; transform: translateY(0); }
+  92%{ opacity:1; transform: translateY(0); }
+  97%{ opacity:0; transform: translateY(-4px); }
+  100%{ opacity:0; }
+}
+
+@media (max-width: 1024px) and (min-width: 901px){
+  .phone{ width: 250px; height: 508px; }
+  .hero-copy p{ max-width: 400px; }
+}
+
+@media (max-width: 900px){
+  .hero .container{ grid-template-columns: 1fr; }
+  .phone-stage{ order:-1; margin-bottom: 10px; }
+  .phone{ width: 240px; height: 486px; }
+}
+
+@media (max-width: 420px){
+  .phone{ width: 210px; height: 426px; }
+  .store-btn{ padding: 10px 16px; }
+}
