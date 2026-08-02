@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>awpa | Connect. Trade. Grow.</title>
+<meta name="description" content="awpa is a messaging and business app for people and businesses everywhere. Chat, share updates, and trade, all in one place.">
+<meta name="theme-color" content="#16A34A">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://awpa.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="awpa">
+<meta property="og:title" content="awpa | Connect. Trade. Grow.">
+<meta property="og:description" content="A messaging and business app for people and businesses everywhere. Chat, share updates, and trade, all in one place.">
+<meta property="og:url" content="https://awpa.app/">
+<meta property="og:image" content="https://awpa.app/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="awpa | Connect. Trade. Grow.">
+<meta name="twitter:description" content="A messaging and business app for people and businesses everywhere. Chat, share updates, and trade, all in one place.">
+<meta name="twitter:image" content="https://awpa.app/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/features.css">
+<link rel="stylesheet" href="css/business-footer.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="awpa home">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 2C8.27 2 2 7.85 2 15.1c0 4.05 1.98 7.67 5.09 10.06-.16 1.7-.68 3.6-1.55 5.15a.6.6 0 0 0 .68.87c2.6-.6 4.8-1.63 6.4-2.6 1.32.35 2.75.54 4.38.54 7.73 0 14-5.85 14-13.1S23.73 2 16 2Z" fill="#16A34A"/>
+        <circle cx="10.5" cy="15" r="1.6" fill="#fff"/>
+        <circle cx="16" cy="15" r="1.6" fill="#fff"/>
+        <circle cx="21.5" cy="15" r="1.6" fill="#fff"/>
+      </svg>
+      <span class="brand-word">awpa</span>
+    </a>
+
+    <nav>
+      <ul class="nav-main">
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown">
+          <button aria-haspopup="true" aria-expanded="false">
+            Features
+            <svg class="chev" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown" role="menu">
+            <a href="#messaging" role="menuitem">
+              <span class="dd-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M21 12c0 4.42-4.03 8-9 8-1.06 0-2.08-.16-3.02-.46L3 21l1.54-4.6A7.93 7.93 0 0 1 3 12c0-4.42 4.03-8 9-8s9 3.58 9 8Z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <span><strong>Messaging</strong><span>Text, voice notes, media &amp; docs</span></span>
+            </a>
+            <a href="#calls" role="menuitem">
+              <span class="dd-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <span><strong>Calls</strong><span>Voice &amp; video, minimize &amp; multitask</span></span>
+            </a>
+            <a href="#status" role="menuitem">
+              <span class="dd-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5v3M20.5 12h-3M12 20.5v-3M3.5 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+              <span><strong>Status</strong><span>Updates that last 24 hours, 3 days, or a week</span></span>
+            </a>
+            <a href="#groups" role="menuitem">
+              <span class="dd-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="8.5" cy="9" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="16" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/><path d="M3 19c.5-3 2.6-4.8 5.5-4.8S13.5 16 14 19M14.5 19c.4-2.2 1.9-3.6 4-3.6s3.5 1.3 3.9 3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+              <span><strong>Groups</strong><span>Group chats &amp; business broadcasts</span></span>
+            </a>
+            <a href="#marketplace" role="menuitem">
+              <span class="dd-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 8.5 5.5 4h13L20 8.5M4 8.5h16M4 8.5V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V8.5M9 12a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><strong>Marketplace</strong><span>List, sell &amp; pay with escrow</span></span>
+            </a>
+            <a href="#security" role="menuitem">
+              <span class="dd-ic"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6"/></svg></span>
+              <span><strong>Security</strong><span>Messages sent securely</span></span>
+            </a>
+          </div>
+        </li>
+        <li><a href="for-business.html">For Business</a></li>
+        <li><a href="download.html">Download</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="for-business.html" class="btn btn-outline">For Business</a>
+      <a href="download.html" class="btn btn-primary">Download</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <p class="eyebrow">awpa technologies</p>
+      <h1>connect. <span class="accent">trade.</span> grow.</h1>
+      <p>Chat with friends, follow the businesses you buy from, and pay for what you order, all inside the same conversation.</p>
+      <div class="hero-actions">
+        <a href="/downloads/awpa.apk" download="awpa.apk" class="store-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><small>Download for</small><strong>Android</strong></span>
+        </a>
+        <a href="#" data-store-link class="store-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M16.5 3c.15 1.2-.34 2.4-1.05 3.25-.73.87-1.92 1.55-3.08 1.46-.17-1.16.4-2.38 1.1-3.16C14.24 3.6 15.4 3.02 16.5 3ZM20.2 17.15c-.55 1.24-.82 1.8-1.53 2.9-1 1.55-2.4 3.48-4.15 3.5-1.55.02-1.95-1.02-4.05-1.01-2.1.01-2.54 1.03-4.09 1.01-1.75-.02-3.08-1.76-4.08-3.31-2.8-4.3-3.1-9.34-1.37-12.02 1.23-1.9 3.17-3.02 5-3.02 1.86 0 3.03 1.03 4.57 1.03 1.49 0 2.4-1.03 4.57-1.03 1.63 0 3.35.9 4.58 2.44-4.03 2.2-3.38 7.94.55 9.51Z" fill="#fff"/></svg>
+          <span><small>Coming soon on</small><strong>App Store</strong></span>
+          <span class="tag-soon">Soon</span>
+        </a>
+      </div>
+      <p class="hero-note">Download awpa directly for Android. iOS isn't available yet.</p>
+    </div>
+
+    <div class="phone-stage" aria-hidden="true">
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="phone-bar">
+            <div class="avatar">H</div>
+            <div class="who"><strong>Horizon Traders</strong><span>Business account</span></div>
+          </div>
+          <div class="thread">
+            <div class="bubble in">Hi! Do you still have the leather sneakers?<span class="t">10:02</span></div>
+            <div class="bubble out">Yes, still available 🟢<span class="t">10:02</span></div>
+            <div class="bubble card">
+              <div class="card-top"></div>
+              <div class="card-body"><strong>Leather Sneakers</strong><span>₦15,000</span></div>
+            </div>
+            <div class="bubble sys">🔒 Payment held safely until delivery</div>
+            <div class="bubble in">Delivered! Releasing payment now<span class="t">10:04</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MESSAGING ============ -->
+<section class="feature reveal" id="messaging">
+  <div class="container">
+    <div class="feature-copy">
+      <p class="eyebrow">Messaging</p>
+      <h3>Say it however it comes naturally</h3>
+      <p>Send text, voice notes, photos, videos, and documents instantly. React to a message, reply directly to it, or forward it along, the way a real conversation actually moves.</p>
+      <a href="help-center.html" class="link-more">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="mock mock-msg">
+      <div class="mock-label"><span>Chat · illustrative preview</span><span>swap for real screenshot</span></div>
+      <div class="row"><div class="b a">Can you send the invoice?</div></div>
+      <div class="row"><div class="b b">Sending it now 📄</div></div>
+      <div class="row"><div class="b a">Got it, thank you!</div></div>
+      <div class="toolbar">
+        <div class="tool"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Z" stroke="currentColor" stroke-width="1.6"/><path d="M6 11v1a6 6 0 0 0 12 0v-1M12 18v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+        <div class="tool"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10" r="1.4" fill="currentColor"/><path d="M6 17l4-4 3 3 3-4 3 5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <div class="tool"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M14 4H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 4v4h4" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALLS ============ -->
+<section class="feature reverse reveal" id="calls">
+  <div class="container">
+    <div class="feature-copy">
+      <p class="eyebrow">Calls</p>
+      <h3>Talk it through, then keep going</h3>
+      <p>Make voice and video calls right from a chat. Need to check something else mid-call? Minimize it and keep using the app without hanging up.</p>
+      <a href="help-center.html" class="link-more">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="mock mock-call">
+      <div class="mock-label"><span>Call screen · illustrative preview</span><span></span></div>
+      <div class="ring">DK</div>
+      <div class="timer">04:12</div>
+      <div class="pill">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M4 8h4l4-4h0v16h0l-4-4H4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="15" y="6" width="6" height="12" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+        Minimize to keep chatting
+      </div>
+      <div class="dots">
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z" fill="#fff"/></svg></span>
+        <span class="end"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATUS ============ -->
+<section class="feature reveal" id="status">
+  <div class="container">
+    <div class="feature-copy">
+      <p class="eyebrow">Status</p>
+      <h3>Share what's happening, on your own schedule</h3>
+      <p>Post a photo, video, text, or voice update, and choose how long it stays up: the usual 24 hours, or extend it to 3 days or a full week. Choose who sees it too, your full contact list or just the people you pick.</p>
+      <a href="help-center.html" class="link-more">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="mock mock-status">
+      <div class="mock-label"><span>Status tray · illustrative preview</span><span></span></div>
+      <div class="duration-picker">
+        <span class="d-pill">24 hours</span>
+        <span class="d-pill active">3 days</span>
+        <span class="d-pill">7 days</span>
+      </div>
+      <div class="ring-row">
+        <div class="s"><div class="r"><span>+</span></div><small>Your status</small></div>
+        <div class="s"><div class="r"><span>KE</span></div><small>Kemi</small></div>
+        <div class="s"><div class="r"><span>MU</span></div><small>Musa Traders</small></div>
+        <div class="s seen"><div class="r"><span>DA</span></div><small>David</small></div>
+      </div>
+      <div class="privacy-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6"/></svg>
+        Visible to all your contacts, or only who you choose
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GROUPS ============ -->
+<section class="feature reverse reveal" id="groups">
+  <div class="container">
+    <div class="feature-copy">
+      <p class="eyebrow">Groups</p>
+      <h3>Chat together, or speak to everyone at once</h3>
+      <p>Run group chats with admin controls for who can post and add members. Businesses can also send one-way broadcast messages straight to their followers.</p>
+      <a href="help-center.html" class="link-more">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="mock mock-group">
+      <div class="mock-label"><span>Group · illustrative preview</span><span></span></div>
+      <div class="stack">
+        <div class="av">A</div><div class="av">B</div><div class="av">C</div><div class="av">+9</div>
+      </div>
+      <div class="name">Traders Circle</div>
+      <div class="sub">12 members · 2 admins</div>
+      <div class="broadcast">
+        <span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 11v2a2 2 0 0 0 2 2h1l3 4v-4h1l7-3V8l-7-3h-1v4H6a2 2 0 0 0-2 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+        <span>Broadcast: "New stock arriving Friday. Place your orders early." Sent to 340 followers, replies go to you directly.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARKETPLACE (differentiator, heavier weight) ============ -->
+<section class="feature marketplace reveal" id="marketplace">
+  <div class="container">
+    <div class="feature-copy">
+      <p class="eyebrow">Marketplace: built for how business already happens</p>
+      <h3>List it, sell it, get paid safely</h3>
+      <p>Businesses list products right inside awpa. Buyers pay securely, and the money is held until the buyer confirms delivery. If something goes wrong, either side can open a dispute and have it resolved.</p>
+      <a href="for-business.html" class="link-more">See how escrow works <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="mock mock-market">
+      <div class="mock-label"><span>Product listing · illustrative preview</span><span></span></div>
+      <div class="listing">
+        <div class="thumb"></div>
+        <div>
+          <div class="name">Leather Sneakers</div>
+          <div class="price">₦15,000</div>
+          <div class="seller">Sold by Horizon Traders</div>
+        </div>
+      </div>
+      <div class="escrow">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="#fff" stroke-width="1.6"/><path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#fff" stroke-width="1.6"/></svg>
+        <span>Held in escrow</span>
+        <span class="amt">₦15,000</span>
+      </div>
+      <div class="steps"><i class="done"></i><i class="done"></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECURITY ============ -->
+<section class="feature reveal" id="security">
+  <div class="container">
+    <div class="feature-copy">
+      <p class="eyebrow">Security</p>
+      <h3>Sent securely, every time</h3>
+      <p>Every message you send on awpa travels over a secure, encrypted connection between your device and our servers, protecting it from interception in transit.</p>
+      <a href="help-center.html" class="link-more">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="mock mock-security">
+      <div class="mock-label" style="align-self:flex-start;width:100%;"><span>Security · illustrative preview</span><span></span></div>
+      <div class="lock">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><rect x="5" y="11" width="14" height="9" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="1.6"/></svg>
+      </div>
+      <div class="caption">Sent over a secure connection</div>
+      <div class="fine">awpa does not yet offer end-to-end encryption. We're clear about that so you always know exactly what's protected.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VERIFICATION ============ -->
+<section class="feature reverse reveal" id="verification">
+  <div class="container">
+    <div class="feature-copy">
+      <p class="eyebrow">Verification</p>
+      <h3>Know which businesses you can trust</h3>
+      <p>Once a business account passes a certain number of followers and clears a review, it earns a blue verification badge, a signal to buyers that it's a real, established business.</p>
+      <a href="for-business.html" class="link-more">How verification works <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="mock mock-verify">
+      <div class="mock-label" style="align-self:flex-start;width:100%;"><span>Business profile · illustrative preview</span><span></span></div>
+      <div class="badge-row">
+        <span class="biz-name">Horizon Traders</span>
+        <span class="check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="stat">12,400 followers · reviewed &amp; verified</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOR BUSINESS EMPHASIS BLOCK ============ -->
+<section class="for-business" id="for-business">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow on-dark">For business</p>
+      <h2>Turn your following into your storefront</h2>
+      <p>awpa gives your business the tools to reach customers, sell directly, and prove you're trustworthy, without leaving the chat.</p>
+    </div>
+    <div class="biz-grid">
+      <div class="biz-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11v2a2 2 0 0 0 2 2h1l3 4v-4h1l7-3V8l-7-3h-1v4H6a2 2 0 0 0-2 2Z" stroke-linejoin="round"/></svg></div>
+        <h4>Broadcast messages</h4>
+        <p>Send one message to every follower at once. Replies still come to you one-on-one.</p>
+      </div>
+      <div class="biz-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 1 1 8 0v3"/></svg></div>
+        <h4>Escrow-backed listings</h4>
+        <p>List products, get paid securely, and let funds release only once delivery is confirmed.</p>
+      </div>
+      <div class="biz-card boosted">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke-linejoin="round"/></svg></div>
+        <h4>Boosted status</h4>
+        <p>Pay to extend your status updates to more people beyond your existing followers.</p>
+        <span class="paid-flag">Paid feature</span>
+      </div>
+      <div class="biz-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 13l4 4L19 7"/></svg></div>
+        <h4>Verified badge</h4>
+        <p>Build enough of a following and pass review to earn a blue badge that signals credibility.</p>
+      </div>
+    </div>
+    <div class="biz-cta">
+      <a href="for-business.html" class="btn btn-on-dark">Explore For Business</a>
+      <a href="#download" class="btn btn-ghost-on-dark">Download awpa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD ANCHOR ============ -->
+<section class="section" id="download">
+  <div class="container" style="text-align:center;">
+    <p class="eyebrow" style="justify-content:center;">Download</p>
+    <h2 style="font-size:clamp(26px,3.4vw,38px); margin-top:14px;">Get awpa on your device</h2>
+    <p style="color:var(--ink-soft); max-width:480px; margin:16px auto 0;">Download awpa directly for Android. iOS support is coming soon.</p>
+    <div class="hero-actions" style="justify-content:center; margin-top:28px;">
+      <a href="/downloads/awpa.apk" download="awpa.apk" class="store-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M12 3v12m0 0-4-4m4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span><small>Download for</small><strong>Android</strong></span>
+      </a>
+      <a href="#" data-store-link class="store-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M16.5 3c.15 1.2-.34 2.4-1.05 3.25-.73.87-1.92 1.55-3.08 1.46-.17-1.16.4-2.38 1.1-3.16C14.24 3.6 15.4 3.02 16.5 3ZM20.2 17.15c-.55 1.24-.82 1.8-1.53 2.9-1 1.55-2.4 3.48-4.15 3.5-1.55.02-1.95-1.02-4.05-1.01-2.1.01-2.54 1.03-4.09 1.01-1.75-.02-3.08-1.76-4.08-3.31-2.8-4.3-3.1-9.34-1.37-12.02 1.23-1.9 3.17-3.02 5-3.02 1.86 0 3.03 1.03 4.57 1.03 1.49 0 2.4-1.03 4.57-1.03 1.63 0 3.35.9 4.58 2.44-4.03 2.2-3.38 7.94.55 9.51Z" fill="#fff"/></svg>
+        <span><small>Coming soon on</small><strong>App Store</strong></span>
+        <span class="tag-soon">Soon</span>
+      </a>
+    </div>
+    <p class="form-note" style="margin-top:18px;">Downloading a file from outside the Play Store? Your phone may show an "unknown sources" warning first, that's expected since awpa isn't listed on the Play Store yet.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C8.27 2 2 7.85 2 15.1c0 4.05 1.98 7.67 5.09 10.06-.16 1.7-.68 3.6-1.55 5.15a.6.6 0 0 0 .68.87c2.6-.6 4.8-1.63 6.4-2.6 1.32.35 2.75.54 4.38.54 7.73 0 14-5.85 14-13.1S23.73 2 16 2Z" fill="#16A34A"/>
+            <circle cx="10.5" cy="15" r="1.6" fill="#fff"/><circle cx="16" cy="15" r="1.6" fill="#fff"/><circle cx="21.5" cy="15" r="1.6" fill="#fff"/>
+          </svg>
+          <span class="brand-word">awpa</span>
+        </a>
+        <p>Messaging and commerce for businesses everywhere.</p>
+      </div>
+      <div class="footer-col">
+        <h5>What we do</h5>
+        <ul>
+          <li><a href="#messaging">Features</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="for-business.html">For Business</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Who we are</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Use awpa</h5>
+        <ul>
+          <li><a href="android.html">Android</a></li>
+          <li><a href="iphone.html">iPhone</a></li>
+          <li><a href="download.html">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Need help?</h5>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="help-center.html">Help Center</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AWPA Technologies</span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" aria-label="X"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4 4 20"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 0 1 4 0V17M11 12.5V17"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
